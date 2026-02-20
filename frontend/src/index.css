@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --purple-600: #7c3aed;
+  --pink-soft: #fff4fb;
+}
+
+html,body,#root{height:100%;}
+body{
+  /* Use an explicit CSS gradient instead of @apply for Tailwind gradient utilities
+     because `@apply` does not support certain complex utilities like gradient helpers. */
+  background: linear-gradient(to bottom, var(--pink-soft), white);
+  @apply text-slate-800 antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Small utility to mimic the reference layout */
+.site-wrapper{ @apply max-w-5xl mx-auto px-6; }
+
+/* logo area */
+.brand{ @apply flex items-center gap-3 py-6; }
+.brand .shield{
+  @apply w-10 h-10 rounded-lg flex items-center justify-center text-white;
+  /* explicit diagonal gradient to replace Tailwind gradient @apply */
+  background: linear-gradient(135deg, var(--purple-600), #6366f1);
+}
+.brand .title{ @apply font-extrabold text-xl; }
+.brand .tag{ @apply text-sm text-slate-500; }
+
+/* hero */
+.hero{
+  @apply text-center py-8 px-4 rounded-2xl;
+  background: linear-gradient(to bottom, var(--pink-soft), white);
+}
+.hero h1{ @apply text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900; }
+.hero p{ @apply max-w-3xl mx-auto text-slate-600 mt-3; }
+
+/* stat cards */
+.stats{ @apply mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center; }
+.stat-card{ @apply bg-white rounded-2xl shadow-md px-6 py-4 w-48 text-left; }
+.stat-number{ @apply text-2xl font-extrabold text-purple-600; }
+.stat-label{ @apply text-sm text-slate-500 mt-1; }
+
+/* main card */
+.main-card{ @apply mt-8 bg-white rounded-2xl shadow-lg p-6; }
+.tabs{ @apply flex border-b -mx-6 px-6; }
+.tab{ @apply flex-1 text-center py-3 cursor-pointer text-slate-600; }
+.tab.active{ @apply text-purple-600 border-b-4 border-purple-300; }
+
+.textarea{ @apply w-full h-56 p-4 border rounded-xl mt-4 text-slate-700; }
+.controls{ @apply mt-4 flex gap-3; }
+.btn-primary{ @apply bg-purple-600 text-white px-4 py-2 rounded-xl shadow; }
+.btn-ghost{ @apply border border-slate-200 px-4 py-2 rounded-xl text-slate-700; }
+
+/* responsive */
+@media (max-width:640px){
+  .hero h1{ @apply text-2xl }
+  .stat-card{ @apply w-full text-center }
+}

@@ -1,0 +1,14 @@
+# Python dependencies for SheSign backend
+# Install with: pip install -r requirements.txt
+
+fastapi
+uvicorn[standard]
+python-multipart
+pdfplumber
+pytesseract
+Pillow
+
+# Note: pytesseract requires the Tesseract OCR engine installed on the system.
+# On Windows: install Tesseract (https://github.com/tesseract-ocr/tesseract#windows)
+# On macOS: `brew install tesseract`
+# On Linux: use your distro package manager, e.g. `sudo apt install tesseract-ocr`

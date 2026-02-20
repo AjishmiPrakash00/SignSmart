@@ -1,0 +1,30 @@
+{
+  "terminate without notice": {
+    "explanation": "They can fire you without warning.",
+    "severity": "HIGH"
+  },
+  "surveillance": {
+    "explanation": "You are allowing monitoring.",
+    "severity": "MEDIUM"
+  },
+  "penalty": {
+    "explanation": "You may be fined.",
+    "severity": "MEDIUM"
+  },
+  "visitor": {
+    "explanation": "Your guests are restricted.",
+    "severity": "LOW"
+  },
+  "maternity": {
+    "explanation": "This affects pregnancy rights.",
+    "severity": "HIGH"
+  },
+  "curfew": {
+    "explanation": "There are strict entry time rules.",
+    "severity": "MEDIUM"
+  },
+  "liability": {
+    "explanation": "They are not responsible for harm.",
+    "severity": "HIGH"
+  }
+}
