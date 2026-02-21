@@ -1,6 +1,6 @@
 // frontend/src/services/api.js
 
-const API_URL = "http://127.0.0.1:8000/analyze";
+const API_URL = " https://signsmart.onrender.com/analyze";
 
 export async function analyzeDocument(file) {
   const formData = new FormData();
