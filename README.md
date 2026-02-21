@@ -16,11 +16,10 @@
 
 ## Hosted Project Link
 
-Frontend: [http://localhost:5173 ](https://signsmarts.netlify.app/login) 
-Backend: [http://127.0.0.1:8000  ](https://signsmart.onrender.com)
+Frontend: https://signsmarts.netlify.app/
+Backend: https://signsmart.onrender.com
 
-https://signsmarts.netlify.app/login
-
+//signsmarts.netlify.app/
 ---
 
 ## Project Description
@@ -233,6 +232,7 @@ Auto-generated FastAPI Swagger documentation.
 # Project Demo
 
 ## Video
+https://drive.google.com/file/d/1TyB-2ybrzobQ4MkIAKTIfzIfSpBV_tjg/view?usp=drive_link
 
 Explain:
 - Document upload
