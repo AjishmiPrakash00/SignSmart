@@ -18,7 +18,8 @@
 
 Frontend: [http://localhost:5173 ](https://signsmarts.netlify.app/login) 
 Backend: [http://127.0.0.1:8000  ](https://signsmart.onrender.com)
-([Add deployed link if hosted](https://signsmarts.netlify.app/login))
+
+https://signsmarts.netlify.app/login
 
 ---
 
