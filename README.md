@@ -19,7 +19,7 @@
 Frontend: https://signsmarts.netlify.app/
 Backend: https://signsmart.onrender.com
 
-//signsmarts.netlify.app/
+https://signsmarts.netlify.app/
 ---
 
 ## Project Description
